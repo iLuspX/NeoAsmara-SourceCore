@@ -2,7 +2,7 @@
 
 ## Founder and maintainer
 
-- **LuspX_** — [iLuspX on GitHub](https://github.com/iLuspX)
+- **LuspX_** : [iLuspX on GitHub](https://github.com/iLuspX)
 
 ## Permanent contribution credits
 
