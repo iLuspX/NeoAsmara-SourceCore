@@ -1,6 +1,6 @@
 <p align="center"><img src="docs/assets/banner.svg" alt="ROSH: Neo Asmara - C++ server source" width="100%"></p>
 
-# NeoAsmara Core — Source Code
+# NeoAsmara Core : Source Code
 
 C++ source, build scripts and reviewed server-side data for the NeoAsmara Core. This repository is for developers who want to inspect, modify or compile the server services.
 
