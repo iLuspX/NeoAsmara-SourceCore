@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/assets/banner.svg" alt="ROSH: Neo Asmara — C++ server source" width="100%"></p>
+<p align="center"><img src="docs/assets/banner.svg" alt="ROSH: Neo Asmara - C++ server source" width="100%"></p>
 
 # NeoAsmara Core — Source Code
 
