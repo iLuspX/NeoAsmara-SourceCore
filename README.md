@@ -30,7 +30,7 @@ This source package does **not** include game-client assets, authenticated/encry
 
 | Requirement | Use |
 |---|---|
-| Windows x64 | Build and run the native Core. Windows 11 IoT is the locally tested system. |
+| Windows x64 | Build and run the native Core.|
 | Python 3.11+ (64-bit) | Downloads the pinned compiler when needed and runs resource-analysis tools. |
 | Windows PowerShell 5.1+ | Runs `BUILD.ps1`; included with Windows. |
 | LLVM-MinGW, UCRT x86_64 | C++ compiler and linker. `BUILD.cmd` downloads and verifies the pinned release if it is not already present. |
