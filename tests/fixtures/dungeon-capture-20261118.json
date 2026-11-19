@@ -1,0 +1,13 @@
+{
+  "source": "Karos Teste BERNEO, LUPINEL, TEMPTEROM.pcapng",
+  "first_room_29614": {
+    "frame": 173841,
+    "endFrame": 173841,
+    "time": 1267.1994475,
+    "category": 10,
+    "sub": 0,
+    "body": "000073ae000000000000006000000002ffffffff",
+    "stream": 33,
+    "direction": "S"
+  }
+}

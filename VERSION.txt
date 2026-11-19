@@ -1,0 +1,1 @@
+Marco 4.1 - Windows IoT sqlite C1083 fix: bundled sqlite3.h and automatic WinSQLite DLL import library.

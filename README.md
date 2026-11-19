@@ -1,82 +1,83 @@
-# NeoAsmara Core : Source Code
+<p align="center"><img src="docs/assets/banner.svg" alt="ROSH: Neo Asmara — C++ server source" width="100%"></p>
 
-C++ source for the NeoAsmara Windows server services. This folder contains build inputs and test sources. It has no backups, player databases, passwords, signing keys, client packages or extracted game assets.
+# NeoAsmara Core — Source Code
 
-## Programs to install
+C++ source, build scripts and reviewed server-side data for the NeoAsmara Core. This repository is for developers who want to inspect, modify or compile the server services.
 
-### To run the compiled Core
+<p align="center"><a href="#build-on-windows">Build</a> · <a href="#apply-a-core-update">Apply an update</a> · <a href="#prepare-server-files">Prepare server files</a> · <a href="docs/IN_GAME_COMMANDS.md">Staff commands</a> · <a href="#requirements">Requirements</a></p>
 
-Use the matching **NeoAsmara server-files package** on Windows x64. It supplies the server configuration, clean SQLite databases, authenticated catalogs and runtime DLLs. Keep `libc++.dll` and `libunwind.dll` beside the server executables in `Bin`.
+## Build output
 
-The C++ server uses Windows' built-in SQLite runtime. **A separate SQLite server, SQL Server, Python or .NET is not required to run the compiled C++ services.** Windows 11 IoT is the locally tested system.
+The source builds the native Windows server programs and supporting services. These screenshots are from the compiled server tools included in a matching NeoAsmara Core installation.
 
-### To edit, update or compile the source
+<table>
+<tr><td width="50%"><strong>MainServer</strong><br><img src="docs/assets/mainserver.png" alt="MainServer cluster and operator console"></td><td width="50%"><strong>LoginServer</strong><br><img src="docs/assets/loginserver.png" alt="LoginServer status and service log"></td></tr>
+<tr><td><strong>LobbyServer</strong><br><img src="docs/assets/lobbyserver.png" alt="LobbyServer status panel"></td><td><strong>WorldServer</strong><br><img src="docs/assets/worldserver.png" alt="WorldServer channel selector and status"></td></tr>
+</table>
 
-| Program | What you use it for | Official download |
-|---|---|---|
-| **Python 3.11 or newer (64-bit)** | Required by the automatic compiler-download helper and Python analysis tools. Make sure `python --version` works in PowerShell. | [Download Python for Windows](https://www.python.org/downloads/windows/) |
-| **LLVM-MinGW — UCRT x86_64** | The C++ compiler, linker and Windows import libraries used by `BUILD.cmd`. The build helper downloads and verifies the pinned release automatically when absent. | [Pinned LLVM-MinGW 20261020 download](https://github.com/mstorsjo/llvm-mingw/releases/download/20261020/llvm-mingw-20261020-ucrt-x86_64.zip) · [Project releases](https://github.com/mstorsjo/llvm-mingw/releases) |
-| **Windows PowerShell 5.1 or newer** | Runs `BUILD.ps1`. Windows PowerShell is included with Windows; PowerShell 7 is an optional alternative. | [PowerShell installation instructions](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows) |
-| **Visual Studio Code** | Optional editor for C++ files, JSON configuration, scripts and documentation. Install the Microsoft C/C++ extension for C++ editing support. | [Download Visual Studio Code](https://code.visualstudio.com/download) · [Microsoft C/C++ extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) |
-| **Git for Windows** | Optional version control for cloning the repository, reviewing changes, pulling updates and submitting contributions. | [Download Git for Windows](https://git-scm.com/downloads/win) |
-| **DB Browser for SQLite** | Optional interface for inspecting a disposable database copy during development. Stop the relevant server before manually editing its database. | [Download DB Browser for SQLite](https://sqlitebrowser.org/dl/) |
+The panels show a local development installation. Process IDs, paths and service counts are specific to that machine; screenshots do not imply that every game feature is complete.
 
-**For the normal build, install Python and run `BUILD.cmd`.** The compiler is fetched automatically; Visual Studio Code, Git and DB Browser are optional tools.
+## What is included
 
-### Optional tools for other workflows
+- C++ source for the Core's native services and server programs.
+- Windows build scripts, a pinned compiler bootstrapper and build-time checks.
+- Reviewed dungeon data overrides and dungeon review notes.
+- Tests and tools for the source workflows described below.
 
-| Program | When it is needed | Official download |
-|---|---|---|
-| **CMake 3.20 or newer** | Alternative CMake-based builds. `BUILD.cmd` does not use it. | [Download CMake](https://cmake.org/download/) |
-| **Visual Studio / Build Tools for Visual Studio**, with **Desktop development with C++** and a **Windows SDK** | Alternative MSVC/CMake development. The native CMake configuration needs the Windows SDK `winsqlite3.lib`. The portable LLVM-MinGW build does not need this installation. | [Visual Studio and Build Tools downloads](https://visualstudio.microsoft.com/downloads/) · [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/) |
-| **.NET Framework 4.8** | The separately distributed launcher and desktop GM Tool; it is not a dependency of the C++ Core. | [Download .NET Framework 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48) |
-| **Node.js** | Optional acceleration for the KPK resource-reading helper. Its Python fallback is available without Node.js. | [Download Node.js](https://nodejs.org/en/download) |
+This source package does **not** include game-client assets, authenticated/encrypted game catalogs, private release keys, player databases, backups or the complete preconfigured server-files distribution. To run the server, use a matching NeoAsmara server-files package alongside this source.
 
-The portable LLVM-MinGW build is the path compiled and tested for this export. The alternative MSVC/CMake workflow has not been validated here.
+## Requirements
+
+| Requirement | Use |
+|---|---|
+| Windows x64 | Build and run the native Core. Windows 11 IoT is the locally tested system. |
+| Python 3.11+ (64-bit) | Downloads the pinned compiler when needed and runs resource-analysis tools. |
+| Windows PowerShell 5.1+ | Runs `BUILD.ps1`; included with Windows. |
+| LLVM-MinGW, UCRT x86_64 | C++ compiler and linker. `BUILD.cmd` downloads and verifies the pinned release if it is not already present. |
+| Visual Studio Code, Git for Windows | Optional editor and version-control tools. |
+| DB Browser for SQLite | Optional; inspect only a disposable database copy, with the related server stopped. |
+
+No SQL Server, standalone SQLite server, .NET or Python runtime is required to run the compiled C++ services. The Core uses Windows' built-in SQLite runtime. CMake and Visual Studio Build Tools are optional alternatives; the portable LLVM-MinGW path is the one configured for this source export.
 
 ## Build on Windows
 
-Double-click **BUILD.cmd** from a writable folder. Folder names and locations can change.
+1. Extract this source folder to a writable location. Its folder name and path can be changed.
+2. Install Python 3.11 or newer and confirm `python --version` works in PowerShell.
+3. Double-click `BUILD.cmd` and let it download and verify the pinned LLVM-MinGW compiler on the first build.
+4. Find the output in `build/native`.
 
-The first build needs Python 3.11 or newer to download the pinned LLVM-MinGW compiler. The download is checked against the SHA-256 in `tools/native_toolchain.json`. The compiler is not bundled with this source copy. Windows SDK, Visual Studio and SQL Server are not required by this build script.
+The build produces the server executables, `KarosRuntime.dll`, data/account/GM services, `ServerControl.exe`, required runtime DLLs and test binaries. Building does not install files into a server folder or restart a running service.
 
-If LLVM-MinGW is installed outside this source folder, run the command from the source folder and provide the installation root. It must contain `bin/x86_64-w64-mingw32-clang++.exe`:
+If you already installed LLVM-MinGW elsewhere, open PowerShell in the source folder and provide its installation root. It must contain `bin/x86_64-w64-mingw32-clang++.exe`:
 
 ```powershell
 $toolchainRoot = Read-Host 'Path to the LLVM-MinGW installation folder'
 .\BUILD.ps1 -ToolchainRoot $toolchainRoot
 ```
 
-Output goes to `build/native`: KarosRuntime.dll, the four server executables, KarosDataTool, the native GM/account services, ServerControl, runtime DLLs and tests. Compilation does not deploy files or restart any server.
+The compiler archive's SHA-256 is pinned in `tools/native_toolchain.json` and checked before extraction. You do not need to edit the build script to point it at a developer-specific path.
 
 ## Dependencies
 
-| Dependency | Source |
+| Dependency | How it is provided |
 |---|---|
-| LLVM-MinGW/UCRT compiler | Pinned version and SHA-256 in `tools/native_toolchain.json`; fetched on first build |
-| nlohmann/json 3.12.0 | Included under `third_party/nlohmann`, with its MIT license |
-| SQLite C API header | Included as `include/sqlite3.h` |
-| SQLite runtime | Windows `winsqlite3.dll`; the script generates its import library |
-| Win32, Winsock, BCrypt, DPAPI, GDI and common controls | Windows / compiler SDK headers and import libraries |
-| Python 3.11+ | Compiler setup and optional resource-analysis tests |
+| LLVM-MinGW / UCRT | Pinned release and SHA-256 in `tools/native_toolchain.json`; downloaded by the bootstrap helper when needed. |
+| nlohmann/json 3.12.0 | Included in `third_party/nlohmann` under its MIT license. |
+| SQLite C API header | Included as `include/sqlite3.h`. |
+| SQLite runtime | Windows `winsqlite3.dll`; the build creates the import library. |
+| Win32, Winsock, BCrypt, DPAPI and common controls | Windows and compiler SDK headers/libraries. |
+| Python 3.11+ | Compiler setup and optional resource-analysis tools. |
 
-CMake 3.20+ is an alternative for developers with a Windows SDK. Configure with `ROSH_NATIVE_WINDOWS=ON`; set `ROSH_SQLITE_IMPORT_LIBRARY` if automatic SDK detection fails. `ROSH_NATIVE_WINDOWS=OFF` builds the older offline lab and requires a separate SQLite development package.
+For the alternative CMake workflow, use CMake 3.20+ and a Windows SDK. The native CMake configuration needs `winsqlite3.lib`; `ROSH_NATIVE_WINDOWS=OFF` builds the older offline lab and requires a separate SQLite development package.
 
-## Run and test
+## Apply a Core update
 
-Use the matching server-files package for configuration, clean databases and authenticated game catalogs. This copy includes reviewed dungeon-data overrides; the complete authenticated game catalogs and client assets are supplied separately. Test changes in a separate server installation before replacing a working runtime.
+`BUILD.cmd` only compiles. To apply the compiled binaries to a server installation:
 
-`BUILD.ps1` runs the foundation tests. It also builds dungeon domain and packet-flow tests. Dungeon tests require authenticated content and an isolated fixture marked `GM_TEST_FIXTURE`; never point those tests at live player databases. The other tests under `tests` cover additional systems and have their own fixture requirements.
-
-The distribution helpers are included under `tools/distribution`. `initialize.cpp` additionally requires an owner-generated `release_content_key.hpp`; private release keys are intentionally absent. The normal build does not compile that release-specific initializer.
-
-## Install a Core patch
-
-`BUILD.cmd` compiles the Core. It does not deploy the result. To update a server installation, use a **matching NeoAsmara server-files package** and copy the build outputs into that installation's `Bin` folder.
-
-1. Shut down that installation with its own `STOP.cmd` and wait for the services to exit.
-2. Keep the package's `Config`, `Data`, `Database`, `Bootstrap` and `Updates` folders together. Do not replace them with files from a different release.
-3. Open PowerShell in this source folder and run:
+1. Use the **matching NeoAsmara server-files release**. Do not mix files from different releases.
+2. Stop that installation with its own `STOP.cmd` and wait for the services to exit.
+3. Keep its `Config`, `Data`, `Database`, `Bootstrap` and `Updates` folders together.
+4. Open PowerShell in this source folder and run the following. When prompted, enter the full path to the matching server-files folder:
 
 ```powershell
 $serverRoot = Read-Host 'Full path to the matching server-files folder'
@@ -102,17 +103,17 @@ foreach ($file in $files) {
 }
 ```
 
-4. Start that installation with its normal `START.cmd` and check `Logs` if a service fails to start.
+5. Start the installation with its normal `START.cmd`. If a service fails, check its `Logs` folder.
 
-This replaces only the listed Core binaries and runtime libraries. It does not alter player databases, configuration, encrypted catalogs, client files, launcher hashes or signatures. Save a copy of the existing `Bin` files before replacing them if you need to roll back.
+This replaces only the listed Core binaries and runtime libraries. It does not change player databases, configuration, encrypted catalogs, client files, launcher hashes or signatures. Keep a copy of the existing `Bin` files if you need to roll back.
 
-### Prepare another server-files package
+## Prepare server files
 
-The source repository is not a complete server-files generator: it intentionally does not contain the encrypted `Data` catalogs, release content key, clean database seeds or the release-specific `Initialize.exe`. Those files are part of the matching server-files distribution and cannot be recreated by running `BUILD.cmd`.
+The source repository is **not** a complete server-files generator. It does not contain the encrypted `Data` catalogs, private release content key, clean database seeds or release-specific `Initialize.exe`; `BUILD.cmd` cannot recreate those files.
 
-To prepare another package, start from an **untouched, matching server-files release**, extract it to a new folder, and apply the patch steps above. Do not use a live server folder as the package template: its `Database` may contain player accounts and progress. Keep the original `Bootstrap\Database` seeds and the release's `Initialize.exe`; do not distribute a generated `Config\Keys\content.key.dpapi` from an initialized machine.
+To prepare a server-files package, start with an untouched server-files release that matches this source revision, extract it to a new folder, then apply the update steps above. Do not use a live server folder as the package template because its databases may contain player accounts and progress. Keep the release's `Bootstrap\Database` seeds and `Initialize.exe`. Never distribute a generated `Config\Keys\content.key.dpapi` from an initialized machine.
 
-To make a ZIP of the prepared, clean folder before its first start:
+To ZIP a clean package before its first start:
 
 ```powershell
 $packageRoot = (Resolve-Path (Read-Host 'Path to the prepared server-files folder')).Path
@@ -124,21 +125,27 @@ if (Test-Path -LiteralPath $zip) { throw "Archive already exists: $zip" }
 Compress-Archive -Path (Join-Path $packageRoot '*') -DestinationPath $zip -CompressionLevel Optimal
 ```
 
-Recipients extract the ZIP and run `START.cmd`; initialization creates the local protected key and preserves existing databases on later starts.
+The recipient extracts the package and runs `START.cmd`. First-run initialization creates the local protected key and preserves existing databases on later starts.
 
-The standard build only updates Core binaries. Changes under `ReferenceOverrides` or other authenticated server data need a separate data-staging and signing step using the matching release content key; copying the DLLs alone does not install those changes. Client or launcher patches also need their own protected-file hashes and signed update publication.
+Changes under `ReferenceOverrides` or other authenticated server data need a separate staging and signing step using the matching release content key. Copying compiled binaries alone does not install those data changes. Client or launcher patches also require their own protected-file hashes and signed update publication.
 
-There is no supported command in this source repository to build a complete server-files release from an empty folder. Use the matching server-files release as the template; do not substitute another build's catalogs, keys or database seeds.
+## Tests and dungeon notes
 
-## Dungeon review
+`BUILD.ps1` runs the foundation tests and builds dungeon domain and packet-flow tests. Dungeon tests need authenticated content and an isolated fixture marked `GM_TEST_FIXTURE`; never point them at live player databases. Other tests under `tests` have their own fixture requirements.
 
-See `docs/DUNGEON_REVIEW.md` for the Peltrok entrance correction, regression checks and remaining work. This source release does not claim complete dungeon parity or production readiness.
+The distribution helpers are under `tools/distribution`. `initialize.cpp` requires an owner-generated `release_content_key.hpp`, so the private release key is not included and the normal build does not compile that release-only initializer.
 
-## In-game commands
+See [Dungeon review](docs/DUNGEON_REVIEW.md) and [Dungeon coverage](docs/DUNGEON_COVERAGE.md) for the Peltok entrance correction, review notes and remaining limitations. This source release does not claim complete dungeon parity or production readiness.
 
-See [IN_GAME_COMMANDS.md](docs/IN_GAME_COMMANDS.md) for command syntax, access levels, staff authentication, aliases and known command limitations. The guide reflects this local source revision; verify the installed server build before relying on commands in a published binary.
+## Staff commands
 
-[Support NeoAsmara on Ko-fi](https://ko-fi.com/neoasmara). Donations are optional.
+See [In-game staff commands](docs/IN_GAME_COMMANDS.md) for syntax, access levels, staff authentication, aliases and known limitations. The guide describes this source revision; check the installed server build before relying on commands in a compiled release.
+
+---
+
+[![Support NeoAsmara on Ko-fi](docs/assets/kofi.svg)](https://ko-fi.com/neoasmara)
+
+Donations are optional and help support continued development.
 
 ## License
 

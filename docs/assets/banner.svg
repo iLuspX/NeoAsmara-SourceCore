@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="240" viewBox="0 0 1280 240" role="img" aria-label="ROSH: Neo Asmara — Server Files">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#152b35"/><stop offset=".6" stop-color="#09131c"/><stop offset="1" stop-color="#203039"/></linearGradient><linearGradient id="gold"><stop stop-color="#85612b"/><stop offset=".48" stop-color="#efd69c"/><stop offset="1" stop-color="#947038"/></linearGradient><radialGradient id="glow"><stop stop-color="#447d88" stop-opacity=".22"/><stop offset="1" stop-color="#08141e" stop-opacity="0"/></radialGradient></defs>
+<rect width="1280" height="240" rx="14" fill="url(#bg)"/><ellipse cx="640" cy="110" rx="520" ry="190" fill="url(#glow)"/>
+<rect x="9" y="9" width="1262" height="222" rx="9" fill="none" stroke="url(#gold)"/><rect x="16" y="16" width="1248" height="208" rx="6" fill="none" stroke="#8c733f" stroke-opacity=".45"/>
+<g fill="none" stroke="url(#gold)" stroke-width="1.4"><path d="M34 75V34h95M34 165v41h95M1246 75V34h-95M1246 165v41h-95"/><path d="M44 62q32-9 18-18q9 32 31 0M44 178q32 9 18 18q9-32 31 0M1236 62q-32-9-18-18q-9 32-31 0M1236 178q-32 9-18 18q-9-32-31 0"/><path d="M390 165h202l48 13 48-13h202"/></g>
+<text x="640" y="66" text-anchor="middle" fill="#a5bec9" font-family="Segoe UI,Arial,sans-serif" font-size="13" letter-spacing="6">THE CHRONICLES CONTINUE</text>
+<text x="640" y="128" text-anchor="middle" fill="#edd39c" font-family="Georgia,serif" font-size="43" letter-spacing="2">ROSH : Neo Asmara</text>
+<text x="640" y="207" text-anchor="middle" fill="#bccbd0" font-family="Segoe UI,Arial,sans-serif" font-size="13" letter-spacing="4">NATIVE C++ SERVER FILES · WINDOWS · SQLITE</text>
+</svg>

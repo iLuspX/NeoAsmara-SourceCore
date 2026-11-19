@@ -1,0 +1,5 @@
+{
+  "name": "karos-cpp-core",
+  "version-string": "0.1.0",
+  "dependencies": ["sqlite3"]
+}

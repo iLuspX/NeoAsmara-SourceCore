@@ -1,0 +1,13 @@
+build/
+tools/toolchains/
+*.zip
+*.7z
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.dpapi
+*.pdb
+__pycache__/
+private/
+Config/Keys/
+release_content_key.hpp

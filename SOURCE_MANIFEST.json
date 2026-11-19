@@ -1,0 +1,903 @@
+{
+  "files": [
+    {
+      "path": ".clang-format",
+      "bytes": 216,
+      "sha256": "9d86afbe23de365e7a78ffe43cddc007be6e38e320d3a5fb49e11a3498ae57ce"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 157,
+      "sha256": "4b85f60f71e2c57778d24f156ea3e4e333e3b645e96aac1de8a0b3348843a758"
+    },
+    {
+      "path": "BUILD.cmd",
+      "bytes": 157,
+      "sha256": "22576fe7b745e3272d69d393ca859df4767dd76078b1f95b573a9b019f6787ce"
+    },
+    {
+      "path": "BUILD.ps1",
+      "bytes": 4808,
+      "sha256": "2df4d2e07d7b059774d077ae9f54711908debb404409b5760a56a06b7a072966"
+    },
+    {
+      "path": "cmake/NativeWindows.cmake",
+      "bytes": 4953,
+      "sha256": "9f0d704434300a0dd126302a2cc91d0026c7a4a4dc5e2424da4a56bb7a1c8b7b"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "bytes": 1081,
+      "sha256": "d8c82e42aeeb7e58484f4ee3ed8b284707953d2c889c957fa0cdbf162004ed6c"
+    },
+    {
+      "path": "CONTRIBUTORS.md",
+      "bytes": 970,
+      "sha256": "bf5aa87f2acedeac8451922c88921d2f23e138d3119ade3938ce5d0c5f67eb96"
+    },
+    {
+      "path": "docs/assets/banner.svg",
+      "bytes": 1727,
+      "sha256": "12ceceb1f6d2de7354d41e6ebcfc988a676ebd5c0ac7c054ddbc103347059845"
+    },
+    {
+      "path": "docs/assets/kofi.svg",
+      "bytes": 535,
+      "sha256": "79202fe99d43d873163f924977ea714f18cb9a053d01c8414eac29d80a45d944"
+    },
+    {
+      "path": "docs/assets/lobbyserver.png",
+      "bytes": 40994,
+      "sha256": "d858d793ea6652629d88fb54439812ea30e6fe77b15c0ec44eb3f3049c8b4529"
+    },
+    {
+      "path": "docs/assets/loginserver.png",
+      "bytes": 40625,
+      "sha256": "75798fe282fe4f993005368eb0695626e1db9c4afb4b809137101f3cee6dc498"
+    },
+    {
+      "path": "docs/assets/mainserver.png",
+      "bytes": 43777,
+      "sha256": "e47f21a93a6a3f9dbf57270160bb192655961dd0025d9a1d5bc6a55deb7a04b0"
+    },
+    {
+      "path": "docs/assets/worldserver.png",
+      "bytes": 39633,
+      "sha256": "fb998903b8b0055eabd665b4d75247f073de4027aabc6e056e222c61d3c755ea"
+    },
+    {
+      "path": "docs/DUNGEON_COVERAGE.md",
+      "bytes": 2466,
+      "sha256": "b7dd855295a642fe0ba58dd769dd0a521631cb5a5e0c33d76547480e4dd53141"
+    },
+    {
+      "path": "docs/DUNGEON_REVIEW.md",
+      "bytes": 4864,
+      "sha256": "6f4db23fcbde3c74502c7e1521ce0dcbaf8dbdb018b4ccfa1b5b51af9a0f428e"
+    },
+    {
+      "path": "docs/IN_GAME_COMMANDS.md",
+      "bytes": 7861,
+      "sha256": "e6b2cb68c9bcf7e5f6573387580d9a8324c5b8ce1db961a344b412671aac71be"
+    },
+    {
+      "path": "include/database.hpp",
+      "bytes": 3529,
+      "sha256": "1d2df704dfd5f2ea7a3d9e748e4fbf97ca5f11d776bcc40c88ac001f7d7db20a"
+    },
+    {
+      "path": "include/gameplay.hpp",
+      "bytes": 1913,
+      "sha256": "eaca2dfe540e9f0bd9512cfc661cfa3eedf754079ef71b009a62e8839028b350"
+    },
+    {
+      "path": "include/gm.hpp",
+      "bytes": 355,
+      "sha256": "2edeccc5516a3303ff3d03d58b7d75587e8babc0f4e2e9e87661d8d2c0570a00"
+    },
+    {
+      "path": "include/native/casting.hpp",
+      "bytes": 793,
+      "sha256": "1b00082e35b3d0d58a2d8a984bd67f1c79ab79e31b9dcd11c2e8da0850a83b1b"
+    },
+    {
+      "path": "include/native/combat.hpp",
+      "bytes": 962,
+      "sha256": "2364e06df94920ea1f7b14bbea40f622416d867845d6d86c6341e39c6982edf4"
+    },
+    {
+      "path": "include/native/consumables.hpp",
+      "bytes": 532,
+      "sha256": "51c65f2b6f2529da85760d1f83d0857b591ded40c2d2277c629ef7b3973df2e0"
+    },
+    {
+      "path": "include/native/control.hpp",
+      "bytes": 667,
+      "sha256": "adf4f632279631dfe0a54f6c5402f63772ac942e74b807689872308ef15184a0"
+    },
+    {
+      "path": "include/native/core.hpp",
+      "bytes": 6797,
+      "sha256": "d27341a5727701f0d9bb3efb3cba1794093014f7b6b6e56ae463ba10d7d1f217"
+    },
+    {
+      "path": "include/native/costumes.hpp",
+      "bytes": 815,
+      "sha256": "8c201199edf4779299e93259f4f8b9a9596a1ad10198518e7244d52b1d4f5d23"
+    },
+    {
+      "path": "include/native/dungeons.hpp",
+      "bytes": 1228,
+      "sha256": "cc3c636b3c0ca501827d30b4b5a3bc838639db2fdc88617d1e58032e21c2ea07"
+    },
+    {
+      "path": "include/native/economy.hpp",
+      "bytes": 2722,
+      "sha256": "7711dfb2a88724bbc9d5b8f7b9c9f0e0ad2059d30c03075c1e62a6a8ab484e52"
+    },
+    {
+      "path": "include/native/entities.hpp",
+      "bytes": 4653,
+      "sha256": "a37d799cfe801b0f6305755657b68f6c7425415d66c1093a57d73bb6f6d6d864"
+    },
+    {
+      "path": "include/native/equipment_rng.hpp",
+      "bytes": 766,
+      "sha256": "85da07cd9284c2aaeab30dc5a05d740275083adecc41f830384baf5e1fb8ba55"
+    },
+    {
+      "path": "include/native/game.hpp",
+      "bytes": 11330,
+      "sha256": "49ee02c9b2c330e3467da1da5c6f70d3333f58ed2dc589841b7a0732e25c9736"
+    },
+    {
+      "path": "include/native/gm.hpp",
+      "bytes": 2501,
+      "sha256": "c5efa32f94da6b42d7c63ab5a5bb37436a99e14f2c8d1ab2004828a6b517fc50"
+    },
+    {
+      "path": "include/native/inventory.hpp",
+      "bytes": 6629,
+      "sha256": "926fc9e65fbd52c0fd76e5adef7a787a05e2882eb3ec1e3d685cd69c9565743b"
+    },
+    {
+      "path": "include/native/loot.hpp",
+      "bytes": 1118,
+      "sha256": "1ebae31597fa4a70250439d549419fb1d2c08ef4fb8dd668cda88244f957e8f4"
+    },
+    {
+      "path": "include/native/premium.hpp",
+      "bytes": 2365,
+      "sha256": "831a9e3b8b91f4e0060b9f89f1bbb9cee78dc939ecc4fea5cde0a36fad2b0452"
+    },
+    {
+      "path": "include/native/quests.hpp",
+      "bytes": 2200,
+      "sha256": "3e78058fe918db463497153d813440a559568003fea6f207a9530ccfc43a6bfb"
+    },
+    {
+      "path": "include/native/quickslots.hpp",
+      "bytes": 380,
+      "sha256": "848bc658e836e2c1244defd4717b21ae441e0d6fab95e8875bdbbf713cb3d873"
+    },
+    {
+      "path": "include/native/runtime.hpp",
+      "bytes": 3788,
+      "sha256": "2f41769e2666ec77a23e92e3167357d6deb936ada1dfe1fdc9ec26838a348408"
+    },
+    {
+      "path": "include/native/scene.hpp",
+      "bytes": 5918,
+      "sha256": "3ec46aedaac41045ae223b2a536ae9880d1560166b1f896fe3595099d8869e86"
+    },
+    {
+      "path": "include/native/skills.hpp",
+      "bytes": 1234,
+      "sha256": "204b1a76661a2750baaabca18bbe8f73b91a181fbdcc1b1affa71a8d68c2136b"
+    },
+    {
+      "path": "include/native/staff.hpp",
+      "bytes": 1308,
+      "sha256": "7797317f854e8563068321b850de166df170b19a924ad555362897f7b9e00e59"
+    },
+    {
+      "path": "include/native/titles.hpp",
+      "bytes": 2889,
+      "sha256": "ea9edadb34c43b119e2b03530941efbf030be0c58b7fc43bd1c65c0520dc4df4"
+    },
+    {
+      "path": "include/sqlite3.h",
+      "bytes": 645281,
+      "sha256": "f319f664239fdd3154721a70b7cf37fa1475703c6a4deaf7605511851c1edb17"
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 7147,
+      "sha256": "488cfa8965c42f391daff94b512a6a909f920ed499f17e2d48c5c6f0fabe43cf"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10599,
+      "sha256": "e51206ee2ff019410eb6b84daad00b7eb0cce077d99a26cebe3a97d76ff0e30d"
+    },
+    {
+      "path": "ReferenceOverrides/data/spawns.json",
+      "bytes": 4222110,
+      "sha256": "4d1e92ddda489659ca4610ac9ea4c7c918d0dbbf74c21c437262c6636d062f2a"
+    },
+    {
+      "path": "ReferenceOverrides/server/dungeon_rules.json",
+      "bytes": 155712,
+      "sha256": "58b8ec283724b73e0c043c1d892c2e4425a124c803aa1a21b14af4e427858c22"
+    },
+    {
+      "path": "ReferenceOverrides/server/native_map_arrivals.json",
+      "bytes": 11560,
+      "sha256": "45bd1e9bbe05a3f864a55fd65d236491da89a030e714613a3a59c39846adf0cf"
+    },
+    {
+      "path": "ReferenceOverrides/server/native_npc_prototypes.json",
+      "bytes": 50356,
+      "sha256": "a5da3d56e42d8e36b5705f66822d35e5e3c7dbd512a1541799680653f2cb8853"
+    },
+    {
+      "path": "src/database.cpp",
+      "bytes": 38986,
+      "sha256": "872c0bb2079acf30d395e68deea7767bd19f8329875f82ae56538832854af67c"
+    },
+    {
+      "path": "src/gameplay.cpp",
+      "bytes": 23750,
+      "sha256": "b286e375dca90208bf0abef487af11678932c51f6931f5b1606d1181d35d4c92"
+    },
+    {
+      "path": "src/gm.cpp",
+      "bytes": 6473,
+      "sha256": "795d13b3f8986c6d9e40b1e22dd12fc6e26b7c784426462d3c9c9e04b71bf458"
+    },
+    {
+      "path": "src/main.cpp",
+      "bytes": 9134,
+      "sha256": "4667510afee2904c960a7d9db8fb54d35b06506d625c2b8227d0b8024966e3e5"
+    },
+    {
+      "path": "src/native_accounts.cpp",
+      "bytes": 14516,
+      "sha256": "4d9622fae927d010ab8984ae661e2c70a7940a240def9970938f83b986767ee3"
+    },
+    {
+      "path": "src/native_application.cpp",
+      "bytes": 17764,
+      "sha256": "cf35d2217d388b62336563a8fb45ceaee162a5e1d7aecc4e579c5ec0cd1e5128"
+    },
+    {
+      "path": "src/native_cast_session.cpp",
+      "bytes": 6140,
+      "sha256": "5a8a7d7bdb1b1c42139575fedb766a0d2f646e891b01caea837bc721afab5df2"
+    },
+    {
+      "path": "src/native_casting.cpp",
+      "bytes": 9045,
+      "sha256": "ba4ea15b95b458244a4466a644e01154dea52685f3984da2e04494eb9b7b3177"
+    },
+    {
+      "path": "src/native_combat.cpp",
+      "bytes": 3420,
+      "sha256": "89b5119348f392b2f124117770960088cd36babd6d733feb5bc2af940701a4f1"
+    },
+    {
+      "path": "src/native_commands.cpp",
+      "bytes": 38468,
+      "sha256": "09b170ed050712285bf20e1a11b8b62830b71efc7c54ad1a6f6b7bcaea786997"
+    },
+    {
+      "path": "src/native_consumables.cpp",
+      "bytes": 8304,
+      "sha256": "0beeea38858a258dd52ffe79e501d9cbba20b01c867ac33871b927a3589b5f37"
+    },
+    {
+      "path": "src/native_control.cpp",
+      "bytes": 6586,
+      "sha256": "b439f1f799e3bbcc9719520aac3e9d579f902021aecf4d6dd4a1cc62876424a9"
+    },
+    {
+      "path": "src/native_core.cpp",
+      "bytes": 21695,
+      "sha256": "da4c54a8236d43a431fd35e69f7945a3c7977ac0be5e544145048cc544bfd781"
+    },
+    {
+      "path": "src/native_costume_session.cpp",
+      "bytes": 3951,
+      "sha256": "4965bbb9b7aeb43310171e0f0fc1ba648a8b5b17270bed41a4208bc47d5ce200"
+    },
+    {
+      "path": "src/native_costumes.cpp",
+      "bytes": 9773,
+      "sha256": "1dde7da1c5bab13800176be6ba59356525787c68b98dac1517d7c277ceda9751"
+    },
+    {
+      "path": "src/native_data_tool.cpp",
+      "bytes": 11489,
+      "sha256": "edb142c0f91e2ef022ef6686c3528d5046d31326978932f56d51e4d8c9f4480a"
+    },
+    {
+      "path": "src/native_dungeons.cpp",
+      "bytes": 13774,
+      "sha256": "65150a27f774e71d831270f504d67bf2b7d2bb3cdaff9f1ad8b14d384859fa00"
+    },
+    {
+      "path": "src/native_economy.cpp",
+      "bytes": 7890,
+      "sha256": "0996d2b362cac459c5a5efd9ed5229e5c257bc372ae53223bd3347ab68dcb317"
+    },
+    {
+      "path": "src/native_encounters.cpp",
+      "bytes": 12065,
+      "sha256": "e276c5e46b10bd212bd34131f904132b0d989247322e212c40d533d8e7d742e4"
+    },
+    {
+      "path": "src/native_entities.cpp",
+      "bytes": 44787,
+      "sha256": "438c6db20208561fde2934284ee5292a76330c560a7f0fedec12fbb331a01995"
+    },
+    {
+      "path": "src/native_entry.cpp",
+      "bytes": 573,
+      "sha256": "e4a6a40345e1122b58a2bfab8750d93be3434c08688cb7dbb8624dff213988be"
+    },
+    {
+      "path": "src/native_equipment_rng.cpp",
+      "bytes": 8247,
+      "sha256": "e2751f41e86480471f3cd1aa4f754214ed0e9f82e57e378d205c1db1efe396c6"
+    },
+    {
+      "path": "src/native_game.cpp",
+      "bytes": 118629,
+      "sha256": "8c587871b19f4422d4d54a9f259bfb8a47fdb900052cebee83d88d9b625956be"
+    },
+    {
+      "path": "src/native_gm_equipment.cpp",
+      "bytes": 5627,
+      "sha256": "4d1488d16081dd852afa14ff453d209a172f4aaf3ff4701cf7af9cdb9331f70f"
+    },
+    {
+      "path": "src/native_gm_service.cpp",
+      "bytes": 5058,
+      "sha256": "d483b63a50758323ea77cba4f581d658a1771d0f734d41d74b02d73737ccb5a8"
+    },
+    {
+      "path": "src/native_gm_world.cpp",
+      "bytes": 17928,
+      "sha256": "0f5691ea343e1274cb78d87000e8c0085b1ac875d1ffaa808439338ea6396356"
+    },
+    {
+      "path": "src/native_gm.cpp",
+      "bytes": 28450,
+      "sha256": "7d826e29edb173cd63b415e0916937aa0b5dfcb4aa47f059983eba0faca53007"
+    },
+    {
+      "path": "src/native_inventory_actions.cpp",
+      "bytes": 56591,
+      "sha256": "c57867cd0e62e75147e244cd5c6aeb0a11547050cf97a265977911106ca38eb8"
+    },
+    {
+      "path": "src/native_inventory.cpp",
+      "bytes": 34535,
+      "sha256": "7ecb4a8d9dfe2f92243b07af7e65a149a6046ce25e72175ab29e027876a32536"
+    },
+    {
+      "path": "src/native_jobs.cpp",
+      "bytes": 3790,
+      "sha256": "c8ea588035fc6a63314d49329c864d6632dd25ec1a878eef50df4e0121c240ae"
+    },
+    {
+      "path": "src/native_kill.cpp",
+      "bytes": 5066,
+      "sha256": "fd235939f5b83ee8e44cf45e9b5be0deb41966323c3face0e047e7243a7243ea"
+    },
+    {
+      "path": "src/native_loot.cpp",
+      "bytes": 17465,
+      "sha256": "dead8a7bfaaedfac3a8bece1777e77f7cea934a65cd5a0ac79a799b95521af7a"
+    },
+    {
+      "path": "src/native_mounts.cpp",
+      "bytes": 4961,
+      "sha256": "5919d058ef6f8e5e10cfe593bfd078e435fa83de91ae06d515ab9f297726c227"
+    },
+    {
+      "path": "src/native_premium_session.cpp",
+      "bytes": 2507,
+      "sha256": "60dc3f044e91d58cec8974c9fc926c951689866ec48e7b88c8eac3986b9b2724"
+    },
+    {
+      "path": "src/native_premium.cpp",
+      "bytes": 11952,
+      "sha256": "216e602ccc6b9de150fca7e34fdd55da390b431942f34cd017c854b00f62ff95"
+    },
+    {
+      "path": "src/native_quest_session.cpp",
+      "bytes": 3682,
+      "sha256": "a73d2b4ac877e45909ed5760443742f882712bff00a910dff0aa30280152f35e"
+    },
+    {
+      "path": "src/native_quests.cpp",
+      "bytes": 23041,
+      "sha256": "061958818ec1153662d85b8d0da1ab066d196e7e7a8b1b5097efe44c9b8f5e21"
+    },
+    {
+      "path": "src/native_quickslots.cpp",
+      "bytes": 2901,
+      "sha256": "98d6f37a313946e39dbdd89f3baffe934d231239ed60195617178b42405187f2"
+    },
+    {
+      "path": "src/native_scene_combat.cpp",
+      "bytes": 16458,
+      "sha256": "16da1a3828e0c6d28c312a59e757dc05636817525ecb8909cee389ca51ca2fbf"
+    },
+    {
+      "path": "src/native_scene.cpp",
+      "bytes": 18312,
+      "sha256": "7b39bed759289e6abe60d6334c097ef6dea334a73ca4ec493d6652e43a9aed06"
+    },
+    {
+      "path": "src/native_services.cpp",
+      "bytes": 38595,
+      "sha256": "2aac1516017715c85415afb95ab2fbe5b09fc2fe215446f58f829b21823adb30"
+    },
+    {
+      "path": "src/native_skill_session.cpp",
+      "bytes": 19504,
+      "sha256": "7d900cda8afd38b7e959ffb0512a6e85585520f22ad25a13575fb572ecd79920"
+    },
+    {
+      "path": "src/native_skills.cpp",
+      "bytes": 17037,
+      "sha256": "5ceb6ebdb2685a4e9741d397ac7eba2ecc6c9fb4f6079b4a8ff536a106841e7c"
+    },
+    {
+      "path": "src/native_staff.cpp",
+      "bytes": 13414,
+      "sha256": "aba6fc82bc17f6905fe3cba1e5cdfb295a16fdee9b619620e9c0da05d2a87fc4"
+    },
+    {
+      "path": "src/native_traits.cpp",
+      "bytes": 13460,
+      "sha256": "38ddb365ac6c067b18e866bf8b7037fe63969eff4c4ea56bb053464071b6873d"
+    },
+    {
+      "path": "src/native_travel.cpp",
+      "bytes": 30902,
+      "sha256": "ef17077e93c1c0d8ac1b9dfbba9f295ec66c27bc3b20005becd769d54d487719"
+    },
+    {
+      "path": "src/native_wire.cpp",
+      "bytes": 4959,
+      "sha256": "d11030cff76811064795087b26ebb71e3fe06396d23105d5430b6a03373e7f1f"
+    },
+    {
+      "path": "tests/capture_reassembly_test.py",
+      "bytes": 1264,
+      "sha256": "df61e715378bd9ef9025768d49ec8f95b3c4edda73aa07dc7a12439caea3c90a"
+    },
+    {
+      "path": "tests/cash_overlay_headless.py",
+      "bytes": 9225,
+      "sha256": "22465f3b00d8aa7cbf90d0837d6f07997c63885d579206e51c480aa2d77eb722"
+    },
+    {
+      "path": "tests/client_command_prefix_test.py",
+      "bytes": 1129,
+      "sha256": "0eee404f38338a72e3303605ee927ddc41530d232015febfaafedf293c48a1dd"
+    },
+    {
+      "path": "tests/client_release_consistency_test.py",
+      "bytes": 4541,
+      "sha256": "6bcbf649e27e5f560d9bff33f9acaad0eb93e051577535808e1e9f33d2bdf372"
+    },
+    {
+      "path": "tests/fixture_files.py",
+      "bytes": 1027,
+      "sha256": "c3a4f8ca8887c7cb371f625015849f59bd6eea7768fa233addbf026d584b9233"
+    },
+    {
+      "path": "tests/fixtures/captured-mounts-20261026.json",
+      "bytes": 50124,
+      "sha256": "15a5f7b30ef472c21f48d9e1c5e16035b1396bf311402ef4f946b3565d8ba987"
+    },
+    {
+      "path": "tests/fixtures/captured-mounts-20261028.json",
+      "bytes": 3039,
+      "sha256": "43fe69329ab6a90a1347310e2c52c2e7628f689511ad9e3fa055ae23483bb412"
+    },
+    {
+      "path": "tests/fixtures/dungeon-capture-20261118.json",
+      "bytes": 306,
+      "sha256": "cfab8a7f453e3855aefcb3109e2b67901f45bb2e35bffb47a2577b2b9bf96fbd"
+    },
+    {
+      "path": "tests/fixtures/dungeon-door-replay-20261119.json",
+      "bytes": 49053,
+      "sha256": "762b5646a4ba21e3a2100aba0f910d5bfa516b45003a1a4afda056a8fbeb51a0"
+    },
+    {
+      "path": "tests/fixtures/native_premium_python_parity.json",
+      "bytes": 3973,
+      "sha256": "7d7af75a63e04774064d3ace6a24ba093a2bc4d21c187b25f3d4a0d8ddc1e932"
+    },
+    {
+      "path": "tests/fixtures/native_quest_python_parity.json",
+      "bytes": 11829,
+      "sha256": "fb6817d0ac7425a27797d69f7eb2d87bbab273dc5561db6d66aaff2836ccbf2e"
+    },
+    {
+      "path": "tests/fixtures/native-buff-list-20261117.json",
+      "bytes": 587,
+      "sha256": "c67feeebd5d825af361e270b732895b651a1708c4a19df830892a352d62df6b8"
+    },
+    {
+      "path": "tests/fixtures/peltrok-maze-doors-20261119.json",
+      "bytes": 10450,
+      "sha256": "6cc00046648b684f86d7a67637d8b08a476b9dd1578ebcc019e5e774dc135b18"
+    },
+    {
+      "path": "tests/fixtures/python_balance_parity.json",
+      "bytes": 678005,
+      "sha256": "882ca8899a7657eeb9cb4628424057d790bd59b64720836caa120ab953e641ab"
+    },
+    {
+      "path": "tests/fixtures/super-skills-capture-20261118.json",
+      "bytes": 1922,
+      "sha256": "12f1b71f52aff2162b5eae3cdf5ddb39592cd18d3f6e579566e8e6836ac49b01"
+    },
+    {
+      "path": "tests/fork_release_test.py",
+      "bytes": 4586,
+      "sha256": "45a901352eedd7263ce04680eff35e1930738213e2ba2c5dff7cd0083fdb4d89"
+    },
+    {
+      "path": "tests/gm_service_test.py",
+      "bytes": 15247,
+      "sha256": "9157ae110ebd4eb881360290aa2f020498dba47ac8a198bfc45c9cccb2f93a82"
+    },
+    {
+      "path": "tests/installed_launchers_test.py",
+      "bytes": 1811,
+      "sha256": "f7cbf2285d70cddadefb568764ee136b511f3bd2a1026580f60327274dbb0ee4"
+    },
+    {
+      "path": "tests/live_render_fixture.py",
+      "bytes": 5080,
+      "sha256": "827be7c1d2ea3ee19e3f6a90ef428434b95c018dc7b9fb09659ba0baf8e9e733"
+    },
+    {
+      "path": "tests/native_actions_test.cpp",
+      "bytes": 5341,
+      "sha256": "3216edcf9b58ba04f142c744fc1673eb73ccbbeecb16e38063173499dbbea0f5"
+    },
+    {
+      "path": "tests/native_all_dungeon_resources_test.cpp",
+      "bytes": 2179,
+      "sha256": "0518656643edcacb35cf55739a999c983d2c5e3ec1b9981428e853878a7f56ed"
+    },
+    {
+      "path": "tests/native_attack_speed_test.cpp",
+      "bytes": 6314,
+      "sha256": "ea7bccad4cd67a4e184b418b0aabd61be69ab68329bb1e83b6fe68df4f070b39"
+    },
+    {
+      "path": "tests/native_buff_bar_test.cpp",
+      "bytes": 3089,
+      "sha256": "afa2d9d7a04589d98a5afd3a59a428d81ca9cfe800f721f88a07da453c38768a"
+    },
+    {
+      "path": "tests/native_capture_replay_test.cpp",
+      "bytes": 12438,
+      "sha256": "8a6862986ea433731b0a137fd500574e124fe07fbb0d2c09f903a4ae81c2280e"
+    },
+    {
+      "path": "tests/native_casting_test.cpp",
+      "bytes": 12747,
+      "sha256": "8201d97703bba92efbdeb62d53cd5fa8ec7cc579ab0304ff7d56a4e228c0f3ca"
+    },
+    {
+      "path": "tests/native_character_panel_test.cpp",
+      "bytes": 7038,
+      "sha256": "8ee0f1f7b259ae10969f4317d2f593a683695e9052bafe0c0bea30c891dc25e2"
+    },
+    {
+      "path": "tests/native_combat_test.cpp",
+      "bytes": 14402,
+      "sha256": "9d4ab26671a4355890dee86282f42169f0d8884eecdbd517c8fe283537746db3"
+    },
+    {
+      "path": "tests/native_commands_test.cpp",
+      "bytes": 21873,
+      "sha256": "29dfea123ac3cc4658744b358c23bcc0e69be64d2d83201f772d599b29e7e0b5"
+    },
+    {
+      "path": "tests/native_consumables_test.cpp",
+      "bytes": 8653,
+      "sha256": "ac912eef84bc44bec5697b260b8dd8909118cd80756e54907f342e8abdb4828e"
+    },
+    {
+      "path": "tests/native_costume_test.cpp",
+      "bytes": 7304,
+      "sha256": "a5c01b864cfdb0ab7eabae4aa3a982a6ead6886d5563a8c3b25a177b70a795df"
+    },
+    {
+      "path": "tests/native_crafting_test.cpp",
+      "bytes": 8229,
+      "sha256": "e5abca98fa87999a5ed10b865f41f150c2dc770b945aa4383b76b17bf83567f3"
+    },
+    {
+      "path": "tests/native_dungeon_door_replay_test.cpp",
+      "bytes": 2321,
+      "sha256": "305f9e366c01ff4aa961dbb73761292bb49c028f6d555b5900138f01f65d3983"
+    },
+    {
+      "path": "tests/native_dungeon_flow_test.cpp",
+      "bytes": 16275,
+      "sha256": "35c795df2dfe21ecd2889afcc0005cd843112afc9dde668d25d667da7944fb88"
+    },
+    {
+      "path": "tests/native_dungeon_resources_test.py",
+      "bytes": 1599,
+      "sha256": "2484c1287848a9d4f8daba298e142cdeef3e1f7575ca14b6ae4b077afe75336f"
+    },
+    {
+      "path": "tests/native_dungeons_test.cpp",
+      "bytes": 10169,
+      "sha256": "da84601843569872716a9e5d032ab246ac8065b21e399e133d0df45fecacc59b"
+    },
+    {
+      "path": "tests/native_enchantment_test.cpp",
+      "bytes": 6180,
+      "sha256": "a7ada337304c8aeea756c26ea21742eaf3950e421a890c9b21786538a03f67e9"
+    },
+    {
+      "path": "tests/native_entities_test.cpp",
+      "bytes": 17851,
+      "sha256": "c32ae3d00de81af85bf0d7ca9766a23915eb6cc512f55915d9aa29c95bae744b"
+    },
+    {
+      "path": "tests/native_equipment_rng_test.cpp",
+      "bytes": 10972,
+      "sha256": "df6fef21d5df465247fd2148f131e54c997cc3836fcaefc09b07368f1606f936"
+    },
+    {
+      "path": "tests/native_foundation_test.cpp",
+      "bytes": 8858,
+      "sha256": "59c41545c8039c5f452b929c82f9ab3872754845010b6b8f01995fab19f028b6"
+    },
+    {
+      "path": "tests/native_game_test.cpp",
+      "bytes": 2660,
+      "sha256": "16111a28ebac2ad3651da41043fa73eaf33543e33a7fea0648fcff7ec7c2b299"
+    },
+    {
+      "path": "tests/native_gm_api_to_mail_test.cpp",
+      "bytes": 5582,
+      "sha256": "4e7d883c0d59cf2ef31548c3ff11e686299a81a774254527bfa9debc03571f6d"
+    },
+    {
+      "path": "tests/native_gm_bridge_test.cpp",
+      "bytes": 14679,
+      "sha256": "757a58e181d2542654f7044d5e7949ad8ca8848e6219f5de7fb01965d62a026a"
+    },
+    {
+      "path": "tests/native_gm_equipment_test.cpp",
+      "bytes": 4692,
+      "sha256": "a68bd200cfcb18d510858c68083d80d50c25f328264da77bf55ca92c9079ccc5"
+    },
+    {
+      "path": "tests/native_integrity_reads_test.py",
+      "bytes": 1110,
+      "sha256": "3628247698bd4b4895c131735c890051f9f0cb9715c956c3b182d59753122949"
+    },
+    {
+      "path": "tests/native_inventory_test.cpp",
+      "bytes": 21730,
+      "sha256": "73e8c64b8df3fc91a262116d1f9402be7cf446c3bb47fa952da02a1a7cc01ef9"
+    },
+    {
+      "path": "tests/native_locale_integrity_test.py",
+      "bytes": 2397,
+      "sha256": "7d7f0b48ddc87ea2e5a92a2db8b441187a474576f77faf754cfe6a257977a779"
+    },
+    {
+      "path": "tests/native_loot_regression_test.cpp",
+      "bytes": 9038,
+      "sha256": "dd64750dd1316c7343c341389b93e0d2f264a1e0feea430d5037dd1829a64125"
+    },
+    {
+      "path": "tests/native_premium_test.cpp",
+      "bytes": 12207,
+      "sha256": "61843a39bd0e100817e4f5e1894168c35d72cc93b7ae9e8f48d8741bb76d13b1"
+    },
+    {
+      "path": "tests/native_quests_test.cpp",
+      "bytes": 11857,
+      "sha256": "8988d112da823199a314b632746c623d229b7357d5d81be75ebeb931fd7da38e"
+    },
+    {
+      "path": "tests/native_scene_test.cpp",
+      "bytes": 13845,
+      "sha256": "d086eb544346de76345a77ce0cc2b055188653f2934d88ff8c020ea5ea4eccfe"
+    },
+    {
+      "path": "tests/native_service_contention_test.cpp",
+      "bytes": 3199,
+      "sha256": "35cb495320a38fe6b659878c94d8ce193fcd36abd4ba8c80afc5eb674559e473"
+    },
+    {
+      "path": "tests/native_services_test.cpp",
+      "bytes": 77057,
+      "sha256": "414d10dcabb6cc205d48f6d6022ec37a578775740fd3e3bcf5b39f30ec36a9d1"
+    },
+    {
+      "path": "tests/native_site_test.py",
+      "bytes": 9622,
+      "sha256": "411d3b690fc2d83ac16e53957d2a8369caba69351686e54c00750fceaf3e9c00"
+    },
+    {
+      "path": "tests/native_skill_persistence_test.cpp",
+      "bytes": 6368,
+      "sha256": "b4f47837423364884f8a0c9ea7812fdc3ce47ae8c3c7cf0808a23cfa403fb214"
+    },
+    {
+      "path": "tests/native_social_chat_test.cpp",
+      "bytes": 10936,
+      "sha256": "06c53d6c3424226dc3aecbe98db02f95acf6202b550f508ce81f30eea424238b"
+    },
+    {
+      "path": "tests/native_sqlite_failure_test.cpp",
+      "bytes": 1500,
+      "sha256": "a52f51de1c28b9f301ab3c4ff8a88b8fa1fb3e9f5f9cf657cc87de9bdb16869c"
+    },
+    {
+      "path": "tests/native_super_skill_flow_test.cpp",
+      "bytes": 14038,
+      "sha256": "3062dc510e3d5a8ab87ac2f830cb9b292e1dc65957b207483d628576ebc014a9"
+    },
+    {
+      "path": "tests/native_super_skill_test.cpp",
+      "bytes": 9414,
+      "sha256": "57d60326661b4d7264cb02df13febb98d7168b5e73acff9268e021a774334ca0"
+    },
+    {
+      "path": "tests/native_visual_hook_test.py",
+      "bytes": 2185,
+      "sha256": "b7111e70ecc3e78b54f34d95f9ce02935454fdaca3c9e187733b4057ae2b7242"
+    },
+    {
+      "path": "tests/native_weapon_glow_test.py",
+      "bytes": 3648,
+      "sha256": "15635addcd484d291d2b10e43419b1edb310b0a1e3ce8fe6e9c5234205dde243"
+    },
+    {
+      "path": "tests/official_talent_data_test.py",
+      "bytes": 1671,
+      "sha256": "5b252fc820c43242c9859af326f6ac4c54300093ec688b6b05334a591b729499"
+    },
+    {
+      "path": "tests/run_capture_replay.py",
+      "bytes": 1271,
+      "sha256": "d3bea7e43e63e9bfc1582d6e31695cac039deec2cf888009527b5594d0db4207"
+    },
+    {
+      "path": "tests/run_native_commands.py",
+      "bytes": 1951,
+      "sha256": "172f33cdda6a6c30492f37a978fd8a4c255545cf629ee2394799636a6b9a4e15"
+    },
+    {
+      "path": "tests/run_native_progression.py",
+      "bytes": 1564,
+      "sha256": "c921e82404cd135396c3be6d550711bac5aa37a1d6bfd187db884cccc087178e"
+    },
+    {
+      "path": "tests/self_test.cpp",
+      "bytes": 14592,
+      "sha256": "a902a7562e55c92c195912da7e475c51d832657e68ffd73211c6c742c4657126"
+    },
+    {
+      "path": "tests/site_ornate_preview.py",
+      "bytes": 7571,
+      "sha256": "4c06dd02657ec1630a8dfd67aafcfcb7e96148055acbea535e1a0553037e2f04"
+    },
+    {
+      "path": "tests/title_public_test.py",
+      "bytes": 2168,
+      "sha256": "8d87cab4b472bb8d1b98e3fa726aa3e9d4139e46dacbe8d52d67695d79422dc2"
+    },
+    {
+      "path": "tests/verified_io_test.py",
+      "bytes": 2367,
+      "sha256": "57fe54a84373469d755e38e0e2653e3661a4603682c0d5f3854bbf7be413b891"
+    },
+    {
+      "path": "third_party/nlohmann/json.hpp",
+      "bytes": 953436,
+      "sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63"
+    },
+    {
+      "path": "third_party/nlohmann/LICENSE.MIT",
+      "bytes": 1076,
+      "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603"
+    },
+    {
+      "path": "tools/bootstrap_toolchain.py",
+      "bytes": 1700,
+      "sha256": "a95c344927857f0477de76f56d31a44c56ef41de4a5c703bad3824f58f2a293a"
+    },
+    {
+      "path": "tools/client_resources/kpk_cipher.cjs",
+      "bytes": 1331,
+      "sha256": "747393bf2aaf1ae39a58a9005e03d6095daa53328e27770c0c953d019eed3ebd"
+    },
+    {
+      "path": "tools/client_resources/kpk_reader.py",
+      "bytes": 6221,
+      "sha256": "54a4304f3816742fd5788d8cfc617cc43c510ef071163dca41f86a7805064b34"
+    },
+    {
+      "path": "tools/client_resources/native_dungeon_map.py",
+      "bytes": 3429,
+      "sha256": "2104cd560c7c050cfb9a0f3f3ac83b6dba868b24d00c5cd10a10020fb93a033a"
+    },
+    {
+      "path": "tools/distribution/account_api.hpp",
+      "bytes": 11157,
+      "sha256": "693371985ef2ac929ed8a5bc6eb445a74ac7564b597500bdaad57d2f4b558ea2"
+    },
+    {
+      "path": "tools/distribution/account_service.cpp",
+      "bytes": 8638,
+      "sha256": "1aee8c2db1d3c4277ecb70331cc20154f794dcdaa49ecce6de3ff960bc78984f"
+    },
+    {
+      "path": "tools/distribution/client_update_source.hpp",
+      "bytes": 6882,
+      "sha256": "a873095ae765173f4435a81a2c0bc0a012ca95ecbb3d973a1d5ef9ba4a8e6a79"
+    },
+    {
+      "path": "tools/distribution/initialize.cpp",
+      "bytes": 3935,
+      "sha256": "4175ba17ada766847a717aaac388a726b5ec4439f3e7d6eb6241f25507d60b20"
+    },
+    {
+      "path": "tools/distribution/server_control.cpp",
+      "bytes": 7958,
+      "sha256": "640f9ed31efb96db83ee3b110a3675922b475df4a5627c46cc32a39b0e8dd9ca"
+    },
+    {
+      "path": "tools/distribution/stage_content.cpp",
+      "bytes": 2634,
+      "sha256": "41bc6b08b4775d32f772f85769a7bb6b48fe4c9aac13bef587cb2109ef8f9ca2"
+    },
+    {
+      "path": "tools/distribution/stage_dungeon_content.cpp",
+      "bytes": 3935,
+      "sha256": "8d656f2abe7131f3c614ce2307d19adfc3ba92e02ef2e58de086a138fa3f5636"
+    },
+    {
+      "path": "tools/native_toolchain.json",
+      "bytes": 282,
+      "sha256": "07cad5817cc9a443674a0dc00da34bf53842cc98cff0f66b40ef893d826c15ef"
+    },
+    {
+      "path": "vcpkg.json",
+      "bytes": 91,
+      "sha256": "85dac07c1dee816b23d064249f6f8aade10bd500a0e87f144024dcc3b11b0ddb"
+    },
+    {
+      "path": "VERSION.txt",
+      "bytes": 104,
+      "sha256": "3031cee357131bd221da6c79e40d1860928ac240ba97a6a00cc2c1a04a197684"
+    }
+  ],
+  "sourceBytes": 8517393.0,
+  "backupsIncluded": false,
+  "playerDatabasesIncluded": false,
+  "privateKeysIncluded": false
+}
