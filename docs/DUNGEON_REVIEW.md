@@ -1,4 +1,4 @@
-# Dungeon review — 19 November 2026
+# Dungeon review - 19 November 2026
 
 ## Changes in this source copy
 
